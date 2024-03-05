@@ -25,6 +25,7 @@ import { confirmAlert } from 'react-confirm-alert';
 //import CSS react-confirm-alert
 import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
+import generatePDF from "../../../services/reportGenerator";
 function UsersIndex() {
 
     //title page
@@ -151,6 +152,12 @@ function UsersIndex() {
                                         <Link to="/admin/users/create" className="btn btn-md btn-success"><i className="fa fa-plus-circle"></i> ADD NEW</Link>
                                         <input type="text" className="form-control" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="search by user name" />
                                         <button type="submit" className="btn btn-md btn-success"><i className="fa fa-search"></i> SEARCH</button>
+                                        <button
+              className="btn btn-primary"
+              onClick={() => generatePDF(users)}
+            >
+              Generate monthly report
+            </button>
                                     </div>
                                 </form>
                                 <div className="table-responsive">
