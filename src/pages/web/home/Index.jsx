@@ -19,7 +19,7 @@ import { useNavigate } from "react-router-dom";
 function Home() {
 
     //title page
-    document.title = "TRAVEL GIS - Website Wisata Berbasis GIS (Geographic Information System)";
+    document.title = "MASJID KAPAL MUNZALAN GIS - Website Masjid Kapal Berbasis GIS (Geographic Information System)";
     
     //navigate
     const navigate = useNavigate();
@@ -88,7 +88,7 @@ function Home() {
                           id={category.id} 
                           name={category.name} 
                           slug={category.slug} 
-                          image={`http://localhost:8000${category.image}`} 
+                          image={category.image}
                         />
                     ))
                 }

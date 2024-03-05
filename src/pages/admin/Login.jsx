@@ -84,7 +84,7 @@ function Login() {
                 <div className="row justify-content-center">
                     <div className="col-md-4 mt-150">
                         <div className="text-center mb-4">
-                            <h4><i className="fa fa-map-marked-alt"></i> <strong>TRAVEL GIS</strong></h4>
+                            <h4><i className="fa fa-map-marked-alt"></i> <strong>MUNZALAN GIS</strong></h4>
                         </div>
                         <div className="card border-0 rounded shadow-sm">
                             <div className="card-body">
